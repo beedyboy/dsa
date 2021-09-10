@@ -44,4 +44,20 @@ console.log(isPowerOfTwo(13));
  *
  * Bitwise would compare the first digit of the two numbers
  * 
+ * e.g.
+ *      0 1 0 0
+ *      1 0 0 0
+ * =>   0 0 0 0
+ * 
+ * Bitwise uses binary to compare, and since there is zero (0) present, it will always return zero
+ *   1100 and 0 1 1 1 will give 0 1 0 0 cos two number have one (1) in same page
+
  */
+ function isPowerOfTwoImproved(number) {
+    if(number < 1) {
+        return false;
+    }
+    
+    return number & (number - 1) === 0;   // O(1) Constant Time Complexity
+}
+console.log(isPowerOfTwoImproved(8));
