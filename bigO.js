@@ -105,3 +105,12 @@
  * 
  * * 
 */
+
+
+/**
+ * If there is a single loop in the algorithm, its likely going to be Linear Time Complexity
+ * 
+ * If there is no loop at all Then its likely Constant Time Complexity
+ * 
+ * If there is a nested loop, its likely Quadratic Time Complexity
+ */
