@@ -13,9 +13,9 @@ The time complexity can be grouped into three:
 Then the loop executes only once, therefore we have constant time O(1)
 
 * # Average Case: 
-> > Here we have no idea where the item is,then it tends to be O(n)
+> Here we have no idea where the item is,then it tends to be O(n)
 * # Worst Case: 
- > > The item we're looking for is the last item in the list, then we have a linear time T= O(n)
+ >> The item we're looking for is the last item in the list, then we have a linear time T= O(n)
 
 # Binary Search & The Master Theorem
 The Master Theorem. allows us to judge the performance of a recursion algorithm
