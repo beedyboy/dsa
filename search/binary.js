@@ -9,10 +9,10 @@ function findElement(sortedArr, element) {
     if (element === sortedArr[middleIndex]) {
       return middleIndex;
     }
-    if(sortedArr[middleIndex < element]) {
-        startIndex = middleIndex + 1;
+    if (sortedArr[middleIndex < element]) {
+      startIndex = middleIndex + 1;
     } else {
-        endIndex = middleIndex - 1;
+      endIndex = middleIndex - 1;
     }
   }
 }
@@ -26,3 +26,24 @@ console.log(findElement(arr, 99));
  * Now it compares 99 and 9, 9 is less than 99,
  * so we change our startIndex to be higher by one
  */
+
+function findElementRecursive(sortedArr, element, offset) {
+  let startIndex = 0;
+  let endIndex = sortedArr.length - 1;
+
+  // find the middle value
+  const middleIndex = Math.floor((endIndex - startIndex) / 2);
+
+  if (element === sortedArr[middleIndex]) {
+    return middleIndex + offset;
+  }
+  if (sortedArr[middleIndex < element]) {
+    startIndex = middleIndex + 1; 
+    offset = offset + middleIndex + 1;
+  } else {
+    endIndex = middleIndex;
+}
+ return findElementRecursive(sortedArr.slice(startIndex, endIndex + 1), element, offset);
+}
+
+console.log(findElementRecursive(arr, 99, 0));

@@ -51,3 +51,23 @@ Then the loop executes only once, therefore we have constant time O(1).
 The item we're looking for is at the beginning or end.  O(log n)
 Because we split the array in half in every iteration 
 ```
+
+# Master Theorem
+Runtime of recursion: O(n^log b a)
+
+Overall algorithm runtime (time complexity) - three cases:
+> Recursion does more work:
+>> O(n^log b a)
+
+> Same work inside and outside of recursion
+>> O(n^log b a log n)
+> Non-recursive part does more work
+>> O(fn(n))
+
+Where
+
+```
+a equals the number of subproblems  (number of recursion splits)
+b equals the relative subproblem size (input reduction per split)
+f(n) equals the runtime outside of the recursion
+```
