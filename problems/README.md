@@ -15,4 +15,12 @@
 Finding good approaches to solve a problem takes practice - there is no simple "blueprint" that you can apply to every problem
 ```
 
->> Practice by diving into common algorithms and interview questions
+> > Practice by diving into common algorithms and interview questions
+
+## Greedy Vs Dynamic
+
+> > Greedy is the solution you write to make best possible decision in every step and hope tha it leads to the best overall solution.
+> > They are faster to set up and come up with but they don't necessarily provide the best runtime and/or result
+
+> > Dynamic algorithms evaluates all possible solutions and find overall best solution via comparison
+> > It uses the divide and conquer approach: Divide the problem into smaller, easy-to-solve subproblems
