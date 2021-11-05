@@ -3,7 +3,6 @@ Programs that helps search things in an array of data
 
 # Linear Search
   [3, 10, -3, 48, 5, 33, 99]
-
 #### Lets say we are looking for 5
 It works on ordered and unordered lists and checks all items until it finds the element you're searching
 
