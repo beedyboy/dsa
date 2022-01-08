@@ -94,3 +94,23 @@ e.g.
 - A Weighted Graph is a graph in Which the edges have values corresponding to weights
 - An intercity road network could be an example of a weighted graph, where each city is a node and each road is an edge, labeled with their lengths.
 - An Unweighted Graph has no weights to its edges, so every edge is the same as any other edge
+
+## Cyclic vs Acyclic Graphs
+- In a Cyclic Graph, there us at least one cycle, meaning that there is a path from at least one node back to itself
+- An Acyclic Graph, means the graph contains no cycles aka no node can be traversed back to itself.
+- Both of these graphs can be directed or Undirected. Directed Acyclic Graphs (DAG's) have special applications in computer science and can often be used to represebt any complex data processing flows
+
+
+## Dense Vs Sparse Graphs
+- Dense Graph - close to the maximum number of edges
+- Sparse Graph - the number of edges is close to the number of nodes in the graph
+
+#
+#
+### Other types
+- Self-loop - when an edge has just one vertex(like a web page linking to itself)
+- Multi-edge graphs - there are multiple edges between two vertices
+- Simple Graph - A graph with no self-loops and no multi-edges
+
+- in a simple directed graph, the maximum number of edges will be equal to n ^(n-1) where n is the number of nodes
+- In a simple Undirected graph, the maximum number of edges is n ^(n-1)/2 - becuase there are no directions, there can only be one edge between two nodes
